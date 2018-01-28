@@ -1,0 +1,31 @@
+{
+  "name": "knockout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UsefulWeb/KnockOut.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UsefulWeb/KnockOut/issues"
+  },
+  "homepage": "https://github.com/UsefulWeb/KnockOut#readme",
+  "devDependencies": {
+    "flexboxgrid": "^6.3.1",
+    "laravel-mix": "^2.0.0",
+    "laravel-mix-pug": "^0.1.3",
+    "normalize.css": "^7.0.0",
+    "pug": "^2.0.0-rc.4",
+    "webpack": "^3.10.0"
+  }
+}
