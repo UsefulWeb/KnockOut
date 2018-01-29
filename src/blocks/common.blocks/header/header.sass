@@ -1,2 +1,45 @@
 .header
-  &__logo-image
+  box-sizing: border-box
+  &__container
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 100vw
+      height: 100%
+      left: -100vw
+      top: 0
+      background-color: #000
+  &__row
+    align-items: center
+  &__logo
+    padding: 85px 0px 82px 0px
+    box-sizing: border-box
+    position: relative
+    background: #000
+    color: #fff
+    &:after
+      content: ''
+      position: absolute
+      z-index: 1
+      top: 0
+      width: 100%
+      height: 100%
+      right: -33.3333%
+      background-color: #000
+      transform: skewX(-42deg)
+  &__app
+    position: relative
+    z-index: 2
+    font-size: 30px
+    font-weight: 400
+    margin: 0
+  &__app-first-word
+    font-weight: 800
+  &__info
+    padding: 0 0 0 63px
+    display: flex
+  &__info-contents
+    padding-left: 18px
+  &__info-primary
+    color: #000
