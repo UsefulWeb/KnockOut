@@ -1,13 +1,21 @@
 section.section.jumbotron
-    hgroup
-        h1.jumbotron__title
-            b Martial
-            | Arts
-        h3.jumbotron__subtitle
-            | We’re 1st Academy in London
-    .jumbotron__text
-        p We stand apart from other schools because one on one private lessons are included in every membership.
-
-    .jumbotron__controls
-        a(href="#").btn.btn-primary Register Now
-        a(href="#").link Read More
+    //.background
+    //    img.background__image.background__image_right(src='images/jumbotron.jpg')
+    .background
+        .background__container.container
+            .col-md-4.col-md-offset-8
+                img.background__image.background__image_right.img-fluid(src='images/jumbotron.jpg')
+    .jumbotron__container.container
+        .row
+            .col-md-8
+                hgroup
+                    h1.jumbotron__title
+                        b.jumbotron__title_bold Martial
+                        | Arts
+                    h3.jumbotron__subtitle
+                        | We’re 1st Academy in London
+                .jumbotron__text
+                    p We stand apart from other schools because one on one private lessons are included in every membership.
+        .jumbotron__controls
+            a(href="#").btn.btn_primary Register Now
+            a(href="#").btn Read More

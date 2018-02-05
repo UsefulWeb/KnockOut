@@ -2,16 +2,22 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900')
 @import '~flexboxgrid/dist/flexboxgrid.min.css'
+
+@import 'variables'
 @import 'common.blocks/common.blocks'
 
 html
-  font-size: 14px
+  font-size: $font-size
 body
   color: #898989
   font-family: 'Raleway', serif
+  overflow-x: hidden
 
 a
   color: #000
 
 .section
   position: relative
+  box-sizing: border-box
+.img-fluid
+  max-width: 100%

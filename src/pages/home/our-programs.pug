@@ -1,15 +1,26 @@
 section.section.our-programs
-    .content-line.content-line_left.content-line_tilt-left
-        h2.content-line__title Our Programs
-    .background
-        img.background__image
+    .container
+        .background
+            img.background__image.background__image_fullwidth(src='images/kids.jpg')
+            .background__container.container
+                .row
+                    .col-md-offset-7.col-md-5
+                        .background__corner-container
+                            .background__corner.background__corner_top-right
 
-    h2.section-title.section-title_fluid
-        b Junior
-        | Class
-    .aside-footnote.aside-footnote_right
-        .aside-footnote__text
-            p Something for all people of all abilities who want to improve their lives includes weight loss, self-defence .
-        .aside-footnote__controls
-            a(href="#").btn.btn-primary Read More
+        .section
+            .content-line.content-line_overlapping.content-line_with-shadows.content-line_left.content-line_tilt-left
+                .content-line__container.content-line__container_medium
+                    .content-line__contents
+                        h2.content-line__title Our Programs
 
+            h2.section-title.section-title_fluid-bottom-left
+                b.section-title_bold Junior
+                | Class
+            .row
+                .col-md-3.col-md-offset-9
+                    .aside-footnote.aside-footnote_right
+                        .aside-footnote__text
+                            p Something for all people of all abilities who want to improve their lives includes weight loss, self-defence .
+                        .aside-footnote__controls
+                            a(href="#").btn.btn_primary Read More

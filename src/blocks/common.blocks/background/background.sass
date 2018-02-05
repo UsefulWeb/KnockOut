@@ -1,0 +1,35 @@
+.background
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 1
+  &__container
+    position: relative
+    height: 100%
+  &__corner-container
+    position: relative
+    height: 100%
+  &__corner
+    position: absolute
+    height: 100%
+    &_top-right
+      top: 0
+      left: 0
+      background: #fff
+      width: 100vw
+      transform: skewX(41deg)
+  &__image
+    height: 100%
+    &_fullwidth
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      object-fit: cover
+    &_right
+      position: absolute
+      top: 0
+      right: 0
+      object-fit: fill

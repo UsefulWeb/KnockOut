@@ -3,35 +3,44 @@
   z-index: 1000
   width: 100%
   &_overlapping
-    top: -2rem
+    .content-line__container
+      &_small
+        top: -34px
+      &_medium
+        top: -36px
+      &_large
+        top: -36px
   &_top
     width: 100%
     top: 0
+  &_left
+    left: -100%;
+    margin-left: 100px;
+    text-align: right
   &_center
-    .content-line__container-background
-      padding-left: 39px
-      left: -20px
   &_full-right
     left: 0
   &_with-shadows
-    .content-line__container_standart,
-    .content-line__container-background
-      box-shadow: 2px 4px 21px 0px rgba(1, 1, 1, 0.1)
+    .content-line__container
+      box-shadow: 2px 4px 21px 0px rgba(1, 1, 1, 0.3)
   &__container
+    background-color: #fff
     position: relative
     display: flex
     justify-content: space-between
+    &_small
+      padding: 17px 19px
+    &_medium
+      padding: 24px 19px
+    &_large
+      padding: 29px 19px
   &__contents
     position: relative
     z-index: 2
-  &__container-background
-    position: absolute
     width: 100%
-    top: -50%
-    left: -40px
-    z-index: 1
-    background-color: #fff
-    padding: 17px 39px 17px 39px
-  &__container_standart
-    background-color: #fff
-    padding: 17px 19px
+  &__title
+    color: #212121
+    margin: 0
+    font-size: 18px
+    text-transform: uppercase
+    font-weight: 700
