@@ -1,0 +1,48 @@
+.feedback
+  &__container
+    position: relative
+    z-index: 2
+    margin-top: -141px
+    padding: 88px 45px 0 166px
+    height: 358px
+    background-color: #fff
+    box-shadow: 3px 6px 7px 0px rgba(1, 1, 1, 0.03)
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      right: -60px
+      z-index: 1
+      display: block
+      width: 192px
+      height: 100%
+      background-color: #fff
+      transform: skewX(15deg)
+  &__items
+    position: relative
+    z-index: 2
+    &:before
+      content: '“'
+      font-family: Helvetica, sans-serif
+      color: #212121
+      font-size: 162px
+      font-weight: bold
+      position: absolute
+      top: -61px
+      left: -77px
+  &__item
+    padding: 0
+    margin: 0
+    display: none
+    line-height: 30px
+    font-size: 14px
+    &_active
+      display: block
+  &__cite
+    font-style: normal
+    display: flex
+  &__text
+    margin-bottom: 42px
+  &__author-name
+    font-weight: 800
+    color: #212121

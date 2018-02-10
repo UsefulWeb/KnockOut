@@ -1,35 +1,40 @@
-section.section.join
-    .content-line.content-line_right.content-line_tilt-right
-        h2.content-line__title Get a free pass
-        .background
-            img.background__image
+section.section.b-join
+    .background
+        img.background__image
+    .container.front-layer
+        .section
+            .content-line.content-line_overlapping.content-line_with-shadows.content-line_right.content-line_tilt-left
+                .content-line__container.content-line__container_medium.content-line__container_light
+                    .content-line__contents
+                        h2.content-line__title Get a free pass
         .row
-            .col-md-8.col-md-offset-4
+            .col-md-6.col-md-offset-5
                 form.form
-                    .row
+                    .row.b-join__hint
                         p Join us for a Free Week of Classes and Personal Training.
                     .row
                         .col-md-6
                             .row
                                 label.form__label Studen’s Full Name
-                                input(type="text")
+                                input.form__input(type="text")
                             .row
                                 label.form__label Parent’s name if minor
-                                input(type="text")
+                                input.form__input(type="text")
                             .row
                                 label.form__label Phone
-                                input(type="text")
+                                input.form__input(type="text")
                         .col-md-6
                             .row
                                 label.form__label Studen’s Name
-                                input(type="text")
+                                input.form__input(type="text")
                             .row
                                 label.form__label Email
-                                input(type="text")
+                                input.form__input(type="text")
                             .row
                                 label.form__label Choose Location
-                                input(type="text")
+                                select.form__input
+                                    option Moscow
                     .row
-                        textarea(placeholder="Your message")
+                        textarea.form__input(placeholder="Your message")
                     .row
-                        button.btn.btn-primary Send
+                        button.btn.btn_primary.btn_no-margin Send

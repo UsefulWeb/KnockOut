@@ -1,6 +1,6 @@
 .content-line
   position: absolute
-  z-index: 1000
+  z-index: 10
   width: 100%
   &_overlapping
     .content-line__container
@@ -14,20 +14,28 @@
     width: 100%
     top: 0
   &_left
-    left: -100%;
-    margin-left: 100px;
+    left: -100%
+    margin-left: 100px
     text-align: right
+  &_right
+    right: -100%
+    margin-right: 100px
+
   &_center
   &_full-right
+    width: 100vw
     left: 0
   &_with-shadows
     .content-line__container
       box-shadow: 2px 4px 21px 0px rgba(1, 1, 1, 0.3)
   &__container
-    background-color: #fff
     position: relative
     display: flex
     justify-content: space-between
+    &_light
+      background-color: #fff
+    &_dark
+      background-color: #212121
     &_small
       padding: 17px 19px
     &_medium
