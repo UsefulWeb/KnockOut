@@ -2,6 +2,9 @@
   position: absolute
   z-index: 10
   width: 100%
+  &_tilt-right
+    .content-line__container:after
+      transform: skewX(-34deg)
   &_overlapping
     .content-line__container
       &_small
@@ -26,26 +29,35 @@
     width: 100vw
     left: 0
   &_with-shadows
-    .content-line__container
+    .content-line__container:after
       box-shadow: 2px 4px 21px 0px rgba(1, 1, 1, 0.3)
   &__container
     position: relative
     display: flex
     justify-content: space-between
-    &_light
-      background-color: #fff
-    &_dark
-      background-color: #212121
     &_small
-      padding: 17px 19px
+      padding: 16px 19px
     &_medium
       padding: 24px 19px
     &_large
       padding: 29px 19px
+    &:after
+      content: ''
+      position: absolute
+      z-index: 1
+      width: 100%
+      left: 0
+      top: 0
+      height: 100%
+    &_light:after
+      background-color: #fff
+    &_dark:after
+      background-color: #212121
   &__contents
     position: relative
     z-index: 2
-    width: 100%
+    &_fullwidth
+      width: 100%
   &__title
     color: #212121
     margin: 0
