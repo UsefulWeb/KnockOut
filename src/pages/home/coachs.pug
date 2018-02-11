@@ -1,31 +1,39 @@
-section.b-coachs
-    .content-line.content-line_left.content-line_tilt-left
-        h2.content-line__title Our Coachs
-    .gap-1
-    p We’re Proud to Have Some of the Highest Level Coachs in the World.
-    .row
-        .col-lg-3
-            figure.figure
-                img.figure__image
-                figcaption.figure__caption
-                    .figure__title Cynthia James
-                    .figure__subtitle Co-Founder
-        .col-lg-3
-            figure.figure
-                img.figure__image
-                figcaption.figure__caption
-                    .figure__title Rachel Johnson
-                    .figure__subtitle Master
-        .col-lg-3
-            figure.figure
-                img.figure__image
-                figcaption.figure__caption
-                    .figure__title Crystal Reid
-                    .figure__subtitle Master
-        .col-lg-3
-            figure.figure
-                img.figure__image
-                figcaption.figure__caption
-                    .figure__title Billy Estrada
-                    .figure__subtitle Co-Founder
-    .gap-1
+section.b-coachs.section
+    .container
+        .section
+            .content-line.content-line_overlapping.content-line_with-shadows.content-line_left.content-line_tilt-left
+                .content-line__container.content-line__container_medium.content-line__container_light
+                    .content-line__contents
+                        h2.content-line__title Our Coachs
+    .b-coachs__container.container
+        p We’re Proud to Have Some of the Highest Level Coachs in the World.
+        .row.users-list
+            .col-lg-3.figure
+                figure.figure__container.users-list__item.users-list__item_first
+                    img.figure__image.img-fluid(src="http://via.placeholder.com/263x360")
+                    figcaption.figure__caption
+                        .figure__title-container
+                            .figure__title Cynthia James
+                            .figure__subtitle Co-Founder
+            .col-lg-3.figure
+                figure.figure__container.users-list__item
+                    img.figure__image.img-fluid(src="http://via.placeholder.com/263x360")
+                    figcaption.figure__caption
+                        .figure__title-container
+                            .figure__title Rachel Johnson
+                            .figure__subtitle Master
+            .col-lg-3.figure
+                figure.figure__container.users-list__item
+                    img.figure__image.img-fluid(src="http://via.placeholder.com/263x360")
+                    figcaption.figure__caption
+                        .figure__title-container
+                            .figure__title Crystal Reid
+                            .figure__subtitle Master
+            .col-lg-3.figure
+                figure.figure__container.users-list__item.users-list__item_last
+                    img.figure__image.img-fluid(src="http://via.placeholder.com/263x360")
+                    figcaption.figure__caption
+                        .figure__title-container
+                            .figure__title Billy Estrada
+                            .figure__subtitle Co-Founder
+        .gap-1

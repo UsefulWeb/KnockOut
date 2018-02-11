@@ -1,0 +1,32 @@
+.figure
+  &__container
+    position: relative
+    margin: 0
+  &__title-container
+    position: absolute
+    top: 100%
+    right: 0
+    margin-top: -43px
+    &:after
+      content: ''
+      width: 100%
+      position: absolute
+      z-index: 1
+      background: #fff
+      left: 0
+      top: 0
+      height: 100%
+      box-shadow: 2px 4px 21px 0px rgba(1, 1, 1, 0.1)
+      transform: skewX(15deg)
+  &__title
+    position: relative
+    font-weight: 700
+    padding: 18px 27px
+    font-size: 18px
+    z-index: 2
+    color: #212121
+  &__subtitle
+    position: relative
+    z-index: 2
+    text-align: center
+    margin-top: 41px

@@ -1,29 +1,36 @@
 footer.footer
     .container
         .row
-            .col-md-4.footer__section
-                h3.footer__section-title About Us
-                .footer__section-contents
-                    p
-                        img
-                        | The KnockOut Martial Arts method  incorporates a combination of techniques and
-                        | principles from a variety of martial arts styles.
             .col-md-4
-                h3.footer__section-title Programs We Offer
-                .footer__section-contents
-                    nav
-                        div
-                            a(href="#") Kids Karate Program
-                        div
-                            a(href="#") Adult Karate Program
-                        div
-                            a(href="#") Fitness Conditioning
-                        div
-                            a(href="#") Street Education
-                        div
-                            a(href="#") Mighty Matts
+                .footer__section
+                    .footer__section-title-container
+                        h3.footer__section-title About Us
+                    .footer__section-contents
+                        p
+                            img
+                            | The KnockOut Martial Arts method  incorporates a combination of techniques and
+                            | principles from a variety of martial arts styles.
             .col-md-4
-                h3.footer__section-title Newletters
+                .footer__section
+                    .footer__section-title-container
+                        h3.footer__section-title Programs We Offer
+                    .footer__section-contents
+                        nav
+                            ul.list.list_unstyled
+                                li.list__item
+                                    a.list__link(href="#") Kids Karate Program
+                                li.list__item
+                                    a.list__link(href="#") Adult Karate Program
+                                li.list__item
+                                    a.list__link(href="#") Fitness Conditioning
+                                li.list__item
+                                    a.list__link(href="#") Street Education
+                                li.list__item
+                                    a.list__link(href="#") Mighty Matts
+            .col-md-4
+                .footer__section
+                    .footer__section-title-container
+                        h3.footer__section-title Newletters
                     .footer__section-contents
                         p Join our mailing list to stay up to date and get notices about our new releases!
 
@@ -34,18 +41,18 @@ footer.footer
                             .row
                                 button.btn.btn-secondary Send
 
-    .content-line.content-line_full-right.content-line_tilt-right
-        .content-line__container.container
-            ul.social-icons
-                li.social-icons__item
-                    a(href="#")
-                        i.fa.fa-instagram
-                li.social-icons__item
-                    a(href="#")
-                        i.fa.fa-twitter
-                li.social-icons__item
-                    a(href="#")
-                        i.fa.fa-facebook
+.content-line.content-line_full-right.content-line_tilt-right
+    .content-line__container.content-line__container_small.content-line__container_light.container
+        ul.social-icons
+            li.social-icons__item
+                a(href="#")
+                    i.fa.fa-instagram
+            li.social-icons__item
+                a(href="#")
+                    i.fa.fa-twitter
+            li.social-icons__item
+                a(href="#")
+                    i.fa.fa-facebook
 
-            div
-                p Copyright 2016 KnockOut Martial Arts, Designed by Kidesigner
+        .footer__copyright
+            | Copyright 2016 KnockOut Martial Arts, Designed by Kidesigner
